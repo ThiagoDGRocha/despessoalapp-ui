@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DesPessoalApp';
+  title = 'DesPessoalApp Versão 1.0.0';
+  teste = 'Ativando um campo label';
 }
