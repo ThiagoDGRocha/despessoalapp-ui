@@ -12,6 +12,7 @@ import { TransferComponent } from './views/transfer/transfer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import { InputFutureComponent } from './views/input-future/input-future.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatButtonModule} from '@angular/material/button';
     HomeComponent,
     InputComponent,
     OutputComponent,
-    TransferComponent
+    TransferComponent,
+    InputFutureComponent
   ],
   imports: [
     BrowserModule,
