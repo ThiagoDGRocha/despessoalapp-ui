@@ -1,0 +1,19 @@
+<div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%;">
+  <div *ngFor="let transaction of transactions" style="margin: 0.5%;">
+
+    <mat-card class="mat-card-live">
+      <mat-card-title class="mat-card-title-live">
+        <div class="row">
+          <span>
+            <b>Data:</b> {{transaction.operationDate}}
+            <b>Operação:</b> {{transaction.operation}}
+            <b>Banco:</b> {{transaction.bank}}
+            <b>Descrição:</b> {{transaction.description}}
+            <b>Déb/Créd:</b> {{transaction.debCred}}
+            <b>Valor:</b> {{transaction.value}}
+          </span>
+        </div>
+      </mat-card-title>
+    </mat-card>
+  </div>
+</div>

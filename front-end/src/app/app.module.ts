@@ -13,6 +13,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { InputFutureComponent } from './views/input-future/input-future.component';
+import { TransactionListComponent } from './views/home/transaction-list/transaction-list.component';
+import { BalancesComponent } from './views/home/balances/balances.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { InputFutureComponent } from './views/input-future/input-future.componen
     InputComponent,
     OutputComponent,
     TransferComponent,
-    InputFutureComponent
+    InputFutureComponent,
+    TransactionListComponent,
+    BalancesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { InputFutureComponent } from './views/input-future/input-future.componen
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
