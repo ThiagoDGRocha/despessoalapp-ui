@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DesPessoalApp Versão 1.0.0';
-  teste = 'Ativando um campo label';
 }

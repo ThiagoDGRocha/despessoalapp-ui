@@ -1,4 +1,4 @@
-export class Transaction {
+export class TransactionModel {
   bank: string;
   operationDate: string;
   operation: string;

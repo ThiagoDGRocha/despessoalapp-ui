@@ -1,22 +1,16 @@
 <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%;">
-  <mat-card class="mat-card-live">
-    <mat-card-title class="mat-card-title-live">
-      Saldos
-    </mat-card-title>
-    <mat-card-content>
-      <div class="row">
-          <span>
-        <p>Itaú:</p>
-            <p>déb:</p>
-            <p>créd:                     vencimento:</p>
-        NuBank:
-              déb:
-              créd:                     vencimento:
-        Carol:
-              déb:
-              créd:                     vencimento:
-          </span>
-      </div>
-    </mat-card-content>
-  </mat-card>
+  <div *ngFor="let balance of balances" style="margin: 0.5%;">
+
+    <mat-card class="mat-card-live">
+      <mat-card-title class="mat-card-title-live">
+        <div class="row">
+          <b>Banco:</b> {{balance.bank}}
+          <b>Débido:</b> {{balance.deb}}
+          <b>Crédito:</b> {{balance.cred}}
+          <b>Vencimento Crédito:</b> {{balance.crediteDate}}
+          <b>Última Atualização:</b> {{balance.updatedAt}}
+        </div>
+      </mat-card-title>
+    </mat-card>
+  </div>
 </div>
