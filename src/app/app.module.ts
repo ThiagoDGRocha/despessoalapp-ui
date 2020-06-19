@@ -20,6 +20,7 @@ import { InputBankComponent } from './views/input-bank/input-bank.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatCardModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

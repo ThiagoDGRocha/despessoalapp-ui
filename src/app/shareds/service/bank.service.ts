@@ -7,7 +7,7 @@ import {BankModel} from '../model/bank.model';
 @Injectable({ providedIn: 'root' })
 export class BankService {
 
-  apiUrl = 'http://localhost:8080/hello';
+  apiUrl = 'http://localhost:9990/hello';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
